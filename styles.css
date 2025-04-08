@@ -712,6 +712,9 @@ footer {
     .modal__language {
         max-width: 100px;
     }
+    .shape {
+        display: none;
+    }
 }
 
 /* Small phones */
@@ -733,6 +736,9 @@ footer {
         padding: 0;
         width: 100%;
         text-align: center;
+    }
+    .project__description--title {
+        font-size: 32px;
     }
     .project__description--sub-title {
         margin-bottom: 8px;
