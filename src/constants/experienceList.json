@@ -1,0 +1,28 @@
+[
+  {
+    "company": "Skinstric",
+    "role": "Software Engineer",
+    "resps": [
+      "Built modular React codebase with hooks and 10+ reusable UI elements/animations for rapid integration",
+      "Multi-step form process with robust data validation, achieving a 99% accuracy rate in user submissions and secure storage of client information",
+      "Responsive UI layouts with CSS3 and GSAP, delivering dynamic, visually appealing loading animations",
+      "Built a custom animation framework leveraging GSAP timelines, resulting in a 40% increase in user engagement metrics",
+      "Designed an image acquisition flow which improved submission flexibility and security",
+      "Intuitive correction system for skin analysis values using advanced state and event logic in React"
+    ],
+    "date": "Apr 2025 - Aug 2025"
+  },
+  {
+    "company": "Frontend Simplified",
+    "role": "Software Engineer",
+    "resps": [
+      "Responsive React components for NFT display utilizing Firebase Authentication and Firestore database, serving 1000+ digital assets",
+      "Integrated RESTful APIs with Axios, achieving 95% request success and sub-2s load times",
+      "Set up Firebase authentication for 500+ users and secure data management",
+      "Firebase Cloud Functions which reduced metadata response time by 30%",
+      "Mobile-friendly layouts with CSS Flexbox/Grid which ensured 98% device compatibility",
+      "Collaborated with a development team using Git version control, ensuring pull requests are well-documented and readable"
+    ],
+    "date": "Jan 2025 - Apr 2025"
+  }
+]
