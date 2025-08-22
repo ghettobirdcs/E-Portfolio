@@ -30,6 +30,11 @@ export default function Footer() {
     email: false,
     message: false,
   });
+  const [inputValues, setInputValues] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
   const handleComplete = () => {
     setHasAnimated(true);
@@ -87,6 +92,10 @@ export default function Footer() {
     });
   };
 
+  const handleInputChange = (key) => (e) => {
+    setInputValues({ ...inputValues, [key]: e.target.value });
+  };
+
   const timeoutAlert = () =>
     setTimeout(() => {
       setSendStatus({ ...sendStatus, processed: false });
@@ -94,7 +103,7 @@ export default function Footer() {
 
   const sendEmail = async () => {
     const requiredFields = ["name", "email", "message"];
-    const missingFields = requiredFields.filter((field) => !fieldValues[field]);
+    const missingFields = requiredFields.filter((field) => !inputValues[field]);
 
     if (missingFields.length > 0) {
       setSendStatus({
@@ -107,7 +116,7 @@ export default function Footer() {
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(fieldValues.email)) {
+    if (!emailRegex.test(inputValues.email)) {
       setSendStatus({
         processed: true,
         variant: "error",
@@ -123,9 +132,9 @@ export default function Footer() {
       console.log("trigger");
 
       const templateParams = {
-        name: fieldValues.name,
-        email: fieldValues.email,
-        message: fieldValues.message,
+        name: inputValues.name,
+        email: inputValues.email,
+        message: inputValues.message,
       };
 
       const response = await emailjs.send(
@@ -179,7 +188,9 @@ export default function Footer() {
                   placeholder={field.placeholder}
                   rows={field.rows}
                   wrap={field.wrap}
+                  value={inputValues[field.id]}
                   onClick={() => handleInputClick(field.stateKey)}
+                  onChange={handleInputChange(field.id)}
                 ></textarea>
               ) : (
                 <input
@@ -187,7 +198,9 @@ export default function Footer() {
                   name={field.id}
                   id={field.id}
                   placeholder={field.placeholder}
+                  value={inputValues[field.id]}
                   onClick={() => handleInputClick(field.stateKey)}
+                  onChange={handleInputChange(field.id)}
                 />
               )}
               <motion.div
