@@ -36,7 +36,8 @@ export default function Projects() {
       title: "A.I. Skin Analysis Platform",
       detail:
         "A website based on a Figma design using React, CSS, and GSAP for animations. The user inputs basic information that is validated before hitting a loading state while the API responds. This fully-responsive, stylish sequence allows users to upload images or take them in real-time for the A.I. to analyze.",
-      link: "https://skinstric-internship-hazel.vercel.app",
+      github: "https://github.com/ghettobirdcs/Skinstric-Internship",
+      live: "https://skinstric-internship-hazel.vercel.app",
     },
     {
       client: "Frontend Simplified",
@@ -45,7 +46,8 @@ export default function Projects() {
       title: "NFT Marketplace",
       detail:
         "Built to host tens of thousands of NFTs and collections for users to browse through. Users can sort and individually inspect them as well as view their creators profiles. The site is fully responsive with clean API loading states and snappy user feedback.",
-      link: "https://mckade-internship.vercel.app",
+      github: "https://github.com/ghettobirdcs/mckade-internship",
+      live: "https://mckade-internship.vercel.app",
     },
     {
       client: "Frontend Simplified",
@@ -54,7 +56,8 @@ export default function Projects() {
       title: "Online Movie Search",
       detail:
         "A performant, responsive website built to allow users to search and find any movie instantly. Movies can be inspected individually and sorted alphabetically, by relevancy, or by date.",
-      link: "https://react-movies-api-tau.vercel.app",
+      github: "https://github.com/ghettobirdcs/React_MoviesAPI",
+      live: "https://react-movies-api-tau.vercel.app",
     },
     {
       client: "Frontend Simplified",
@@ -63,7 +66,8 @@ export default function Projects() {
       title: "Online Library Store",
       detail:
         "This website includes a fully-functional cart that users can add books to that they find by browsing the catalogue. Skeleton loading states, sorting mechanics, and the ability to inspect books individually all included.",
-      link: "https://library-react-jade-psi.vercel.app",
+      github: "https://github.com/ghettobirdcs/library-react",
+      live: "https://library-react-jade-psi.vercel.app",
     },
   ];
 

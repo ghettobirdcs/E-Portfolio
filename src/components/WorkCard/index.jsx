@@ -5,6 +5,9 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import FadeText from "../FadeText";
 import HideText from "../HideText";
+import Icon from "../Icon";
+import githubIcon from "../../assets/Icon/github.svg";
+import linkIcon from "../../assets/Icon/link-white.svg";
 
 export default function TechCard({ item }) {
   const controls = useAnimation();
@@ -78,9 +81,15 @@ export default function TechCard({ item }) {
           transition={{ duration: 2, delay: 0.5 }}
           onAnimationComplete={() => handleComplete()}
         >
-          <a href={item.link} target="_blank">
-            <img src={item.img} alt="Project Image" />
-          </a>
+          <img src={item.img} alt="Project Image" />
+          <div className="workCard--link--container">
+            <a href={item.github} target="_blank" className="workCard--link">
+              <Icon img={githubIcon} />
+            </a>
+            <a href={item.live} target="_blank" className="workCard--link">
+              <Icon img={linkIcon} />
+            </a>
+          </div>
         </motion.span>
         <h1>
           <HideText controls={controls} delay={delay}>

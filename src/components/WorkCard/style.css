@@ -37,6 +37,52 @@
   height: 500px;
 }
 
+.workCard--link--container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  gap: 25%;
+  z-index: 1;
+}
+
+.workCard--link {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0;
+  transition: all 300ms ease;
+  word-break: none;
+}
+
+.workCard--link .Icon .Icon--icon {
+  height: 100px;
+  width: 100px;
+}
+
+.workCard--link:first-child {
+  padding-left: 100%;
+}
+
+.workCard--link:last-child {
+  padding-right: 100%;
+}
+
+.workCard--link--container:hover .workCard--link:first-child {
+  padding-left: 50%;
+  opacity: 1;
+}
+
+.workCard--link--container:hover .workCard--link:last-child {
+  padding-right: 50%;
+  opacity: 1;
+}
+
 .workCard--body p {
   position: absolute;
   right: 0px;
