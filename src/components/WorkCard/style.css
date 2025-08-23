@@ -65,20 +65,20 @@
 }
 
 .workCard--link:first-child {
-  padding-left: 100%;
+  margin-left: 100%;
 }
 
 .workCard--link:last-child {
-  padding-right: 100%;
+  margin-right: 100%;
 }
 
 .workCard--link--container:hover .workCard--link:first-child {
-  padding-left: 50%;
+  margin-left: 50%;
   opacity: 1;
 }
 
 .workCard--link--container:hover .workCard--link:last-child {
-  padding-right: 50%;
+  margin-right: 50%;
   opacity: 1;
 }
 
