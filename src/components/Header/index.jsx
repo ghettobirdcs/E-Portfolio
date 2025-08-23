@@ -101,7 +101,11 @@ export default function Header() {
             </ScrambleText>
           </a>
           <span className="header--hash">{"//"}</span>
-          <a href="#resume">
+          <a
+            href={`https://docs.google.com/document/d/1wJqS82cz4CItUk9MfPxqaAhWbD4QjFCe/edit?usp=sharing&ouid=114063556545926292073&rtpof=true&sd=true`}
+            target={"_blank"}
+            rel="noopener noreferrer"
+          >
             <ScrambleText shuffle delay={1.5}>
               RESUME
             </ScrambleText>
