@@ -38,25 +38,24 @@ const techs = [
     detail:
       "JavaScript library for building user interfaces, particularly single-page applications.",
   },
-  // {
-  //   title: "Redux",
-  //   icon: reduxIcon,
-  //   detail:
-  //     "Predictable state container for JavaScript apps, often used with React.",
-  // },
+  {
+    title: "Redux",
+    icon: reduxIcon,
+    detail:
+      "Predictable state container for JavaScript apps, often used with React.",
+  },
   {
     title: "Firebase",
     icon: firebaseIcon,
     detail:
       "Platform developed by Google for creating mobile and web applications.",
   },
-  // {
-  //   title: "Sass",
-  //   icon: sassIcon,
-  //   detail:
-  //     "Preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS)",
-  // },
+  {
+    title: "Sass",
+    icon: sassIcon,
+    detail:
+      "Preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS)",
+  },
 ];
 
 export default techs;
-
